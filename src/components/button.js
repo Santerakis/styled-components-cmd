@@ -13,14 +13,22 @@ const StButton = styled.button`
   align-self: ${props => props.align || 'stretch'};
   
   ${props => props.primary && css`
-  color: ${props => props.color || 'white'};
-  background: ${props => props.background || 'red'};
+    color: ${props => props.color || 'white'};
+    background: ${props => props.background || 'red'};
   `}
+  ${props => props.outlined && css`
+    color: ${props => props.color || 'white'};
+    background: transparent;
+    border: 1px solid ${props => props.color || 'white'};
+  `}
+`
+const StLargeButton = styled(StButton)`
+    font-size: 32px
 `
 
 const Button = (props) => {
     return (
-        <StButton {...props}>Отправить</StButton>
+        <StLargeButton {...props}>Отправить</StLargeButton>
     );
 };
 

@@ -16,11 +16,11 @@ function App() {
   return (
     <StAppWrapper >
         <Flex justify={'center'}>
-            <Title color={'white'}>Console cmd 2023. Sergey</Title>
+            <Title color={'green'}>Console cmd 2023. Sergey</Title>
         </Flex>
         <Flex direction={'column'}>
             <Console/>
-            <Button color={'blue'} primary align={'flex-end'}/>
+            <Button outlined color={'green'}primary align={'flex-end'}/>
         </Flex>
 
     </StAppWrapper>
