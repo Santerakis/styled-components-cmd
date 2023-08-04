@@ -1,6 +1,14 @@
 import React from 'react';
-import styled, {css} from "styled-components";
+import styled, {css, keyframes} from "styled-components";
 
+const rotateAnimation = keyframes` 
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+`
 
 const StButton = styled.button`
   border: none;
@@ -9,6 +17,9 @@ const StButton = styled.button`
   cursor: pointer;
   &:focus {
     outline: none;
+  }
+  &:hover {
+    animation: ${rotateAnimation} 1s infinite linear;
   }
   align-self: ${props => props.align || 'stretch'};
   
@@ -28,7 +39,7 @@ const StLargeButton = styled(StButton)`
 
 const Button = (props) => {
     return (
-        <StLargeButton {...props}>Отправить</StLargeButton>
+        <StButton {...props}>Отправить</StButton>
     );
 };
 
