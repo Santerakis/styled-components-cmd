@@ -1,15 +1,18 @@
 import styled from "styled-components";
+import Title from "./components/title";
 
 const StAppWrapper = styled.div`
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background: black;`
+  background: black;
+`
+
 
 function App() {
   return (
     <StAppWrapper >
-      app
+      <Title color={'white'}>CMD</Title>
     </StAppWrapper>
   );
 }
