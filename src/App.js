@@ -20,7 +20,7 @@ function App() {
         </Flex>
         <Flex direction={'column'}>
             <Console/>
-            <Button align={'flex-end'}/>
+            <Button color={'blue'} primary align={'flex-end'}/>
         </Flex>
 
     </StAppWrapper>

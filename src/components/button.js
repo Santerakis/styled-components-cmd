@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 
 const StButton = styled.button`
@@ -11,6 +11,11 @@ const StButton = styled.button`
     outline: none;
   }
   align-self: ${props => props.align || 'stretch'};
+  
+  ${props => props.primary && css`
+  color: ${props => props.color || 'white'};
+  background: ${props => props.background || 'red'};
+  `}
 `
 
 const Button = (props) => {
