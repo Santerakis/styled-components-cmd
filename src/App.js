@@ -11,7 +11,6 @@ const StAppWrapper = styled.div`
   background: black;
 `
 
-
 function App() {
   return (
     <StAppWrapper >
@@ -20,7 +19,7 @@ function App() {
         </Flex>
         <Flex direction={'column'}>
             <Console/>
-            <Button outlined color={'green'}primary align={'flex-end'}/>
+            <Button  align={'flex-end'}/>
         </Flex>
 
     </StAppWrapper>

@@ -10,22 +10,26 @@ const rotateAnimation = keyframes`
   }
 `
 
-const StButton = styled.button`
+const StButton = styled.button.attrs(props => ({
+    primary: true,
+}))`
+  // дефолтные пропсы через attrs
   border: none;
   padding: 10px 15px;
   font-size: 18px;
   cursor: pointer;
+  background: grey;
   &:focus {
     outline: none;
   }
-  &:hover {
-    animation: ${rotateAnimation} 1s infinite linear;
-  }
+  // &:hover {
+  //   animation: ${rotateAnimation} 1s infinite linear;
+  // }
   align-self: ${props => props.align || 'stretch'};
   
   ${props => props.primary && css`
     color: ${props => props.color || 'white'};
-    background: ${props => props.background || 'red'};
+    background: ${props => props.background || 'blue'};
   `}
   ${props => props.outlined && css`
     color: ${props => props.color || 'white'};
