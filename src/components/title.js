@@ -6,11 +6,9 @@ const StTitle = styled.h1`
   color: ${props => props.color};
 `
 
-const Title = ({children, color}) => {
+const Title = (props) => {
     return (
-        <StTitle color={color}>
-            {children}
-        </StTitle>
+        <StTitle {...props}/>
     );
 };
 

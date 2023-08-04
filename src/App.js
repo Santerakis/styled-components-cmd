@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import Title from "./components/title";
+import Flex from "./components/flex";
+import Console from "./components/console";
+import Button from "./components/button";
 
 const StAppWrapper = styled.div`
   width: 100%;
@@ -12,7 +15,14 @@ const StAppWrapper = styled.div`
 function App() {
   return (
     <StAppWrapper >
-      <Title color={'white'}>CMD</Title>
+        <Flex justify={'center'}>
+            <Title color={'white'}>Console cmd 2023. Sergey</Title>
+        </Flex>
+        <Flex direction={'column'}>
+            <Console/>
+            <Button align={'flex-end'}/>
+        </Flex>
+
     </StAppWrapper>
   );
 }
