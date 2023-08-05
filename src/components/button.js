@@ -11,7 +11,7 @@ const rotateAnimation = keyframes`
 `
 
 const StButton = styled.button.attrs(props => ({
-    primary: true,
+    outlined: true,
 }))`
   // дефолтные пропсы через attrs
   border: none;

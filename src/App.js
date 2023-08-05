@@ -17,9 +17,9 @@ function App() {
         <Flex justify={'center'}>
             <Title color={'green'}>Console cmd 2023. Sergey</Title>
         </Flex>
-        <Flex direction={'column'}>
-            <Console/>
-            <Button  align={'flex-end'}/>
+        <Flex direction={'column'} margin={'10px 0'}>
+            <Console color={'green'}/>
+            <Button color={'green'} align={'flex-end'}/>
         </Flex>
 
     </StAppWrapper>

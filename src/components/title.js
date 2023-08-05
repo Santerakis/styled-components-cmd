@@ -9,7 +9,9 @@ const StTitle = styled.h1`
 const Title = (props) => {
     return (
         <StTitle {...props}/>
+        // <StTitle {...{children: 'ASD', color: 'green'}}/>
     );
 };
+
 
 export default Title;
